@@ -68,7 +68,7 @@ public class Loops {
     public static int digitSum(int number) {
         return 0; // TODO
     }
-
+//Hola
     /** B2. El número con sus dígitos al revés, para number no negativo. Ejemplos: 1234 → 4321; 120 → 21. */
     public static int reverse(int number) {
         return 0; // TODO
