@@ -20,17 +20,33 @@ public class Loops {
     /** Último multiplicador de la tabla de multiplicar. */
     private static final int TABLE_LIMIT = 10;
 
+
     // ---------------------------------------------------------------- Parte A ★
 
     /** A1. Suma 1 + 2 + … + limit. Si limit es 0 o negativo, devuelve 0. */
     public static int sumTo(int limit) {
-        //Comentario
-        return 0; // TODO
-    }
+
+            if (limit <= 0) {
+                return 0;
+            }
+            int suma = 0;
+            for (int i = 1; i <= limit; i++) {
+                suma += i;
+            }
+            return suma;
+        }
+
 
     /** A2. number! = 1 × 2 × … × number, para number de 0 a 20. 0! es 1. */
     public static long factorial(int number) {
-        return 0; // TODO
+        if (number < 0) {
+            return 0;
+        }
+        long resultado = 1;
+        for (int i = 1; i <= number; i++) {
+            resultado *= i;
+        }
+        return resultado;
     }
 
     /** A3. Cantidad de dígitos de number. El 0 tiene un dígito; el signo no cuenta (-450 tiene 3). */
@@ -52,7 +68,7 @@ public class Loops {
     public static int digitSum(int number) {
         return 0; // TODO
     }
-
+//Hola
     /** B2. El número con sus dígitos al revés, para number no negativo. Ejemplos: 1234 → 4321; 120 → 21. */
     public static int reverse(int number) {
         return 0; // TODO
