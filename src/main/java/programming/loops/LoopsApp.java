@@ -2,10 +2,6 @@ package programming.loops;
 
 import java.util.Scanner;
 
-/**
- * Programa de consola con un menú que se repite (do-while) y usa los métodos de Loops.
- * Ya está completo: no lo modifiques. Ejecútalo cuando completes los métodos.
- */
 public class LoopsApp {
 
     public static void main(String[] args) {
@@ -13,9 +9,13 @@ public class LoopsApp {
         Scanner input = new Scanner(System.in);
         int option;
         do {
-            System.out.println();
-            System.out.println("1. Factorial  2. ¿Es primo?  3. Número al revés  4. Binario");
-            System.out.println("5. Tabla de multiplicar  6. Triángulo  0. Salir");
+            System.out.println("1. Factorial");
+            System.out.println("2. Numero primo");
+            System.out.println("3. Número al revés");
+            System.out.println("4. Binario");
+            System.out.println("5. Tabla de multiplicar");
+            System.out.println("6. Triángulo");
+            System.out.println("0. Salir");
             System.out.print("Opción: ");
             option = input.nextInt();
             if (option == EXIT_OPTION) {
